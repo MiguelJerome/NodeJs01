@@ -1,0 +1,12 @@
+{
+  "name": "exercice3-passwords2",
+  "version": "1.0.0",
+  "description": "Demandez l’utilisateur d’entrer un nom d’utilisateur et un mot de passe. Validez si le nom d’utilisateur et le mot de passe concorde à partir d’un fichier de données contenant ce type de données. ",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

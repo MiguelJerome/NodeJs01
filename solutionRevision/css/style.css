@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+li > ul > li, li > ol > li {
+    margin: 0 0 0 2em; 
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+th {
+    font-weight: bold;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 75em;
+    padding: 0 1em;
+}
+
+header, footer {
+    padding: 2em;
+    background-color: #f07455;
+} 
+
+main {
+    flex: 1;
+}
+
+footer p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    background-color: #413634;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 5em;
+    background-color: #ffe8e3;
+    border: 2px solid #5f2415;
+    font-size: 1.5em;
+    margin: 1rem auto 0;
+}
+
+nav a:focus {
+    outline: 2px solid #5f2415;;
+    outline-offset: 0;
+}
+
+nav a:hover {
+    box-shadow: 0 .2em 1em .1em #a7503a;
+}
+
+nav a:active {
+    box-shadow: 0 -.2em 1em .1em #a7503a;
+    transform: translateY(.4em);
+}
+
+nav a.active, nav a.active:focus, nav a.active:hover, nav a.active:active {
+    background-color: #f07455;
+    outline: none;
+    box-shadow: none;
+    transform: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 5rem;
+    grid-template-rows: min-content minmax(5rem, auto);
+    margin: 0 0 1em;
+    border: 1px solid #5f2415;
+}
+
+section h2 {
+    padding: 0 0 .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section .instruction {
+    padding: .5em;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: #ffe8e3;
+    border-bottom: 1px solid #5f2415;
+}
+
+section .exercise {
+    padding: .5em;
+}
+
+section .validator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-left: 1px solid #5f2415;
+}
+
+section .validator .material-icons {
+    font-size: 4em;
+}
+
+.validator {
+    background-color: #ff9d9d;
+}
+
+.validator.done {
+    background-color: #9dff9d;
+}
+
+.exercice1 .carre {
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+    border: 1px solid #000;
+}
+
+.exercice2 .conteneur {
+    display: inline-block;
+    background-color: #666;
+    border: 1px solid #000;
+}
+
+.exercice2 .boite > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    background-color: #ccc;
+}
+
+.exercice2 .switcher {
+    width: 20em;
+    height: 7em;
+    background-color: red;
+}
+
+.exercice3 textarea {
+    display: block;
+    width: 20rem;
+}
+
+.exercice4 .boite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 7em;
+    background-color: #600;
+    color: #fff;
+}
+
+.exercice6 .conteneur {
+    display: grid;
+    grid-template-columns: repeat(5, 5em);
+    grid-template-rows: repeat(5, 5em);
+}
+
+.exercice6 .noir{
+    background-color: black;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.exercice6 .rouge{
+    background-color: darkred;
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+}
+
+.exercice6 .orange{
+    background-color: orangered;
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+
+.exercice6 .jaune{
+    background-color: goldenrod;
+    grid-row: 1 / 6;
+    grid-column: 5 / 6;
+}
+
+.exercice6 .vert{
+    background-color: green;
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+}
+
+.exercice6 .bleu{
+    background-color: steelblue;
+    grid-row: 4 / 6;
+    grid-column: 1 / 2;
+}
+
+.exercice6 .violet{
+    background-color: purple;
+    grid-row: 4 / 6;
+    grid-column: 2 / 5;
+}
+
+.exercice7 .conteneur {
+    height: 100%;
+}
+
+.exercice7 .conteneur > div {
+    padding: .25em;
+    background-color: #000;
+    border: 1px solid #aaa;
+    color: #fff;
+}

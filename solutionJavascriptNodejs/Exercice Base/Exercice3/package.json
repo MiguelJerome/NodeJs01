@@ -1,0 +1,12 @@
+{
+  "name": "exercice3-maths-nombre",
+  "version": "1.0.0",
+  "description": "Demandez à l’utilisateur d’entrer des nombres jusqu’à ce qu’il entre le nombre zéro (0). Affichez la somme, la moyenne, le maximum et le minimum de tous les nombres entrés par l’utilisateur.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "exercice1-password",
+  "version": "1.0.0",
+  "description": "Demandez à l'utilisateur d'entrer un mot de passe. Après, demandez-lui de rerentrer son mot de passe. Ci celui-ci est différent de l'original, recommencez jusqu'à ce que les 2 soit pareil.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^16.13.2",
+    "readline": "^1.3.0",
+    "readline-promises": "^1.3.1"
+  }
+}

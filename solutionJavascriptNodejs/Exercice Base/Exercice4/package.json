@@ -1,0 +1,12 @@
+{
+  "name": "exercice4-hidepassword",
+  "version": "1.0.0",
+  "description": "Demandez à l’utilisateur d’entrer une phrase. Demandez ensuite à l’utilisateur d’entrer un mot. Finalement, dans la phrase entrée, remplacez toutes les occurrences du mot entré par des étoiles (*). Par exemple, dans la phrase « Le mot de passe est secret et ne devrait jamais passer en texte clair », si on remplace le mot « Passe » par des étoiles, on obtient la phrase « Le mot de ***** est secret et ne devrait jamais *****r en texte clair ». À la fin du programme, affichez le nombre de mots qui ont été remplacés.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

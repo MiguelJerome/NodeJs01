@@ -1,0 +1,12 @@
+{
+  "name": "exercice6-lettrepourcentage",
+  "version": "1.0.0",
+  "description": "Écrire un programme qui demande à l'utilisateur d'entrer une chaîne de caractères et qui affiche à la console un rapport détaillé de l'analyse de la fréquence de l'occurrence des caractères alphabétiques qui se trouvent dans cette chaîne.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

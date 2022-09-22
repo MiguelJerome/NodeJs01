@@ -1,0 +1,12 @@
+{
+  "name": "exercice2-nombre-premier",
+  "version": "1.0.0",
+  "description": "Déterminez si un chiffre entré par l’usager est un nombre premier. Un nombre est premier s’il et uniquement divisible par 1 et par lui-même.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

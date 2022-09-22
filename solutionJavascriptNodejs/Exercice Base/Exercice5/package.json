@@ -1,0 +1,12 @@
+{
+  "name": "exercice5-facture",
+  "version": "1.0.0",
+  "description": "Demandez à l’utilisateur d’entrer successivement le nombre d’articles achetés ainsi que le prix unitaire de cet article jusqu’à ce que l’utilisateur entre un nombre d’article nul (0). À chaque fois qu’un prix est entré, affichez une ligne de facture indiquant le nombre d’article, son prix unitaire ainsi que le total pour cet article. Demandez ensuite le taux de taxation à l’utilisateur (ex : 13.5%). Le programme devra finalement afficher le sous-total, les taxes ainsi que le grand total.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

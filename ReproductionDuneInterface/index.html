@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gribouille</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <h1>Gribouille</h1>
+            <div class="timer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 12l-.688-4h-.609l-.703 4c-.596.347-1 .984-1 1.723 0 1.104.896 2 2 2s2-.896 2-2c0-.739-.404-1.376-1-1.723zm-1-8c-5.522 0-10 4.477-10 10s4.478 10 10 10 10-4.477 10-10-4.478-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-2-19.819v-2.181h4v2.181c-1.438-.243-2.592-.238-4 0zm9.179 2.226l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.926-1.5-1.328zm-12.679 9.593c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm12 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-6 6c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-4-2c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm8 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm-8-9c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5zm8 0c0 .276-.224.5-.5.5s-.5-.224-.5-.5.224-.5.5-.5.5.224.5.5z"/></svg>
+                <span>1:30</span>
+            </div>
+        </div>
+        <div class="word">
+            Guacamole
+            <div class="step">1/8</div>
+        </div>
+    </header>
+
+    <main>
+        <canvas id="canvas" width="640" height="640"></canvas>
+        <div class="controls">
+            <div class="tools">
+                <label class="tool">
+                    <input type="radio" name="tool" value="eraser">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm6.605-17.581l-10.677 10.68 5.658 5.659 10.676-10.682-5.657-5.657z"/></svg>
+                    </div>
+                </label>
+                <label class="tool">
+                    <input type="radio" name="tool" value="pen" checked>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z"/></svg>
+                    </div>
+                </label>
+                <label class="tool">
+                    <input type="radio" name="tool" value="line">
+                    <div>
+                        <div class="line"></div>
+                    </div>
+                </label>
+            </div>
+            <div class="sizes">
+                <label class="size">
+                    <input type="radio" name="size" value="big">
+                    <div class="big"></div>
+                </label>
+                <label class="size">
+                    <input type="radio" name="size" value="medium" checked>
+                    <div class="medium"></div>
+                </label>
+                <label class="size">
+                    <input type="radio" name="size" value="small">
+                    <div class="small"></div>
+                </label>
+            </div>
+        </div>
+        <div class="colors">
+            <label class="color">
+                <input type="radio" name="color" value="#000" checked>
+                <div class="black"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#AAA">
+                <div class="gray"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#c22">
+                <div class="red"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#e84">
+                <div class="orange"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#ec3">
+                <div class="yellow"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#ab4">
+                <div class="lime"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#484">
+                <div class="green"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#4bb">
+                <div class="cyan"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#46b">
+                <div class="blue"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#84b">
+                <div class="purple"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#c6c">
+                <div class="pink"></div>
+            </label>
+            <label class="color">
+                <input type="radio" name="color" value="#642">
+                <div class="brown"></div>
+            </label>
+        </div>
+    </main>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

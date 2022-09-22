@@ -1,0 +1,12 @@
+{
+  "name": "exercice2-qkill",
+  "version": "1.0.0",
+  "description": "Créez un programme qui écrit dans un fichier tout ce que l’utilisateur écrit dans la console. Quand l’utilisateur entre le code « :q » dans la console, le programme se termine.",
+  "type":"module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

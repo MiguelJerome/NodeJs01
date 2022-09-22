@@ -1,0 +1,12 @@
+{
+  "name": "exercice1-chemintxt",
+  "version": "1.0.0",
+  "description": "Demandez à l'utilisateur de spécifier un chemin vers un fichier dans la console. Par la suite, affichez ce fichier comme si c'était du texte à la console.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastien Hamon",
+  "license": "ISC"
+}

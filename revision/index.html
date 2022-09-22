@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision du Javascript</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>
+                <a href="#">Révision du Javascript</a>
+            </h1>
+        </header>
+
+        <main>
+            <nav></nav>
+
+            <div class="content-wrapper">
+                <section id="exercice1">
+                    <div class="instruction">
+                        <h2>Exercice 1</h2>
+                        <p>
+                            Écrire une fonction ayant pour nom "additionneur" qui prend
+                            en paramètre 2 nombres. La fonction doit retourner la somme
+                            de tous les nombres entre les nombres spécifiés en paramètre
+                            (ex: additionneur(3, 7) == 3 + 4 + 5 + 6 + 7 == 25). Vous 
+                            pouvez tester votre fonction avec le formulaire ci-dessous.
+                        </p>
+                    </div>
+                    <div class="exercise exercice1">
+                        <input type="number" class="nombre1" value="3">
+                        <input type="number" class="nombre2" value="7">
+                        <input type="submit" value="Additionneur">
+                        <div>
+                            Résultat: <span class="reponse"></span>
+                        </div>
+                    </div>
+                    <div class="validator">
+                        <span class="material-icons">close</span>
+                    </div>
+                </section>
+
+                <section id="exercice2">
+                    <div class="instruction">
+                        <h2>Exercice 2</h2>
+                        <p>
+                            Ajouter du code Javascript sur le bouton ci-dessous pour qu'il
+                            change la couleur de la boite entre le rouge et le bleu à 
+                            chaque fois que l'on appuis dessus.
+                        </p>
+                    </div>
+                    <div class="exercise exercice2">
+                        <input type="button" value="Cliquer">
+                        <div class="switcher"></div>
+                    </div>
+                    <div class="validator">
+                        <span class="material-icons">close</span>
+                    </div>
+                </section>
+
+                <section id="exercice3">
+                    <div class="instruction">
+                        <h2>Exercice 3</h2>
+                        <p>
+                            Écrire la fonction "inverserPhrase" qui prends la phrase écrite
+                            dans le textarea ci-dessous et retourne la même phrase, mais 
+                            avec tous les mots inversés (ex: inverserPhrase("Bonjour, je 
+                            m'appelle Jonathan" == "Jonathan m'appelle je Bonjour,")). On
+                            suppose que les mots sont toujours séparé par un espace 
+                            uniquement. Vous pouvez utilisez le bouton ci-dessous pour 
+                            tester votre code.
+                        </p>
+                    </div>
+                    <div class="exercise exercice3">
+                        <textarea></textarea>
+                        <input type="submit" value="Inverser">
+                        <div>
+                            Résultat: <span class="reponse"></span>
+                        </div>
+                    </div>
+                    <div class="validator">
+                        <span class="material-icons">close</span>
+                    </div>
+                </section>
+
+                <section id="exercice4">
+                    <div class="instruction">
+                        <h2>Exercice 4</h2>
+                        <p>
+                            Programmer la fonction "ajouterTodo" qui prends le texte dans le
+                            champ ci-dessous et qui l'ajoute à la fin de la liste HTML 
+                            existante. Le bouton est déjà programmé pour utilisé la fonction 
+                            "ajouterTodo".
+                        </p>
+                    </div>
+                    <div class="exercise exercice4">
+                        <input type="text" placeholder="TODO à ajouter">
+                        <input type="submit" value="Ajouter">
+                        <ul>
+                            <li>Faire le laboratoire</li>
+                            <li>Lire les notes de cours</li>
+                        </ul>
+                    </div>
+                    <div class="validator">
+                        <span class="material-icons">close</span>
+                    </div>
+                </section>
+
+                <section id="exercice5">
+                    <div class="instruction">
+                        <h2>Exercice 5</h2>
+                        <p>
+                            Créer la fonction "enObjet" qui crée un objet javascript et 
+                            prends le texte dans les champs ci-dessous pour le mettre dans
+                            les propriétés "nom", "developpeur", "plateforme" 
+                            respectivement. Votre fonction doit retourner l'objet créé. Vous 
+                            pouvez tester votre code avec le bouton "Ajouter" ci-dessous.
+                        </p>
+                    </div>
+                    <div class="exercise exercice5">
+                        <div>
+                            <input type="text" placeholder="Nom du jeu" class="nom">
+                            <input type="text" placeholder="Développeur" class="developpeur">
+                            <input type="text" placeholder="Plateforme" class="plateforme">
+                        </div>
+                        <input type="submit" value="Ajouter">
+                        <table>
+                            <tr>
+                                <th>Nom du jeu</th><th>Développeur</th><th>Plateforme</th>
+                            </tr>
+                            <tr>
+                                <td>Celeste</td><td>Matt makes Games Inc.</td><td>PC</td>
+                            </tr>
+                            <tr>
+                                <td>Super Smash Bros. Ultimate</td><td>Sora Ltd.</td><td>Switch</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="validator">
+                        <span class="material-icons">close</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer> 
+            <p>&copy; Collège La Cité</p>
+        </footer>
+    </div>
+
+    <script src="./js/exercice-js.js"></script>
+    <script src="./js/validator.js"></script>
+</body>
+</html>

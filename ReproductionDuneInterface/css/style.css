@@ -1,0 +1,270 @@
+:root {
+    --main-color: #72C9D2;
+    --alt-color: #5098D3;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 1rem 1rem 2rem;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.timer svg {
+    width: 2rem;
+    fill: #fff;
+    margin-right: .2rem
+}
+
+.word {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    margin: 2rem 1rem 0;
+    padding: .65rem 0;
+    background-color: #FAFDFD;
+    color: var(--alt-color);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.step {
+    position: absolute;
+    top: 50%;
+    right: .5rem;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+canvas {
+    width: 100%;
+    max-width: 40rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.161);
+    border: 2px solid var(--main-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 40rem;
+    margin: .5rem 0;
+}
+
+.tools, .sizes {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.tool > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: .5rem;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.tool input, .size input, .color input {
+    display: none;
+}
+
+.tool svg {
+    width: 1.8rem;
+    fill: var(--main-color);
+}
+
+.tool .line {
+    width: 2.2rem;
+    border: 3px solid var(--main-color);
+    transform: rotate(-45deg);
+}
+
+.tool input:checked + div svg,
+.tool input:checked + div .line {
+    fill: var(--alt-color);
+    border-color: var(--alt-color);
+}
+
+.tool input:checked + div {
+    border-color: var(--alt-color);
+}
+
+.size > div {
+    background-color: var(--main-color);
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.size .big {
+    width: 2rem;
+    height: 2rem;
+}
+
+.size .medium {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.size .small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.size input:checked + div {
+    border-color: var(--alt-color);
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    justify-items: center;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.color {
+    grid-column-end: span 2;
+}
+
+.color:nth-child(7){
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.color > div {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--alt-color);
+    border-radius: 50%;
+}
+
+.color input:checked + div {
+    border-width: 4px;
+}
+
+.color .black {
+    background-color: #000;
+}
+
+.color .gray {
+    background-color: #aaa;
+}
+
+.color .red {
+    background-color: #C22;
+}
+
+.color .orange {
+    background-color: #E84;
+}
+
+.color .yellow {
+    background-color: #EC3;
+}
+
+.color .lime {
+    background-color: #AB4;
+}
+
+.color .green {
+    background-color: #484;
+}
+
+.color .cyan {
+    background-color: #4BB;
+}
+
+.color .blue {
+    background-color: #46B;
+}
+
+.color .purple {
+    background-color: #84B ;
+}
+
+.color .pink {
+    background-color: #C6C;
+}
+
+.color .brown {
+    background-color: #642;
+}
+
+@media(min-width: 576px){
+    .colors {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .color {
+        grid-column-end: auto;
+    }
+    
+    .color:nth-child(7){
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+
+    .top-header {
+        justify-content: center;
+    }
+
+    .timer {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4.17vw;
+    }
+
+    .timer svg {
+        width: 5.56vw;
+    }
+}
